@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Proyecto Integrador - Social Spirits Restobar S.A.S.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #8B0000; /* Dark Red */
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+        }
+        .subsection-title {
+            font-size: 1.75rem; /* text-3xl */
+            font-weight: 600; /* font-semibold */
+            color: #A52A2A; /* Brownish Red */
+            margin-bottom: 1rem; /* mb-4 */
+            border-bottom: 2px solid #F0F0F0; /* Light gray border */
+            padding-bottom: 0.5rem;
+        }
+        .text-content {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .list-item {
+            margin-bottom: 0.5rem;
+            list-style-type: disc;
+            margin-left: 1.25rem;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #555;
+        }
+        .highlight {
+            background-color: #fee2e2; /* Light red for emphasis */
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+        }
+        .bar-chart-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+        .bar-label {
+            flex-shrink: 0;
+            width: 150px; /* Fixed width for labels */
+            text-align: right;
+            font-weight: 500;
+        }
+        .bar-graph {
+            flex-grow: 1;
+            height: 25px;
+            background-color: #e0e0e0;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+        .bar-fill {
+            height: 100%;
+            background-color: #8B0000; /* Dark Red */
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.5rem;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .recommendation-box {
+            background-color: #fff7ed; /* Light orange */
+            border-left: 4px solid #f97316; /* Orange border */
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .recommendation-box strong {
+            color: #c2410c; /* Darker orange */
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container bg-white rounded-2xl shadow-lg p-6 md:p-10">
+
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <div class="flex justify-center mb-4">
+                <img src="https://drive.google.com/uc?id=1gr2aKF3OmpC1ebgA0PMbIvylQ_WBkEZZ" alt="Logo de la Universidad de las Américas" class="h-24 object-contain">
+            </div>
+            <h1 class="text-5xl font-extrabold text-red-800 mb-4 rounded-xl p-3 bg-red-50 shadow-md">
+                Presentación del Proyecto Integrador
+            </h1>
+            <h2 class="text-3xl font-semibold text-red-700 mb-6">
+                Optimización de la Seguridad y Salud en el Trabajo
+            </h2>
+            <div class="text-lg text-gray-700">
+                <p><strong>Empresa:</strong> Social Spirits Restobar S.A.S.</p>
+                <p><strong>Universidad:</strong> Universidad de las Américas</p>
+                <p><strong>Facultad:</strong> Ingeniería y Ciencias Aplicadas</p>
+                <p><strong>Carrera:</strong> Ingeniería Industrial</p>
+                <p><strong>Docente:</strong> César Larrea</p>
+                <p><strong>Estudiantes:</strong> Abigail López S., Xavier Chantera, Andrea Espinosa</p>
+                <p><strong>Período:</strong> 2025-20</p>
+                <p><strong>Fecha:</strong> Julio, 2025</p>
+            </div>
+        </header>
+
+        <!-- 1. Introducción -->
+        <section class="section-card">
+            <h3 class="section-title">1. Introducción: La Importancia de la SST</h3>
+            <p class="text-content">
+                La Seguridad y Salud en el Trabajo (SST) es un pilar fundamental para el desarrollo sostenible de cualquier organización. Su implementación no solo previene accidentes y enfermedades laborales, sino que también mejora el desempeño, el bienestar del personal y la competitividad institucional. La gestión de los factores de riesgo laboral se convierte en una herramienta estratégica para optimizar los espacios de trabajo.
+            </p>
+            <h4 class="subsection-title">Objetivo General del Proyecto</h4>
+            <p class="text-content">
+                Optimizar el lugar de trabajo en la empresa <span class="highlight">Social-Spirits Restobar S.A.S.</span>, utilizando técnicas de seguridad y salud en el trabajo.
+            </p>
+            <h4 class="subsection-title">Objetivos Específicos</h4>
+            <ul class="list-item">
+                <li>Describir la empresa, su entorno y el giro de negocio.</li>
+                <li>Evidenciar con fotografías cada una de las intervenciones (se presentarán descripciones detalladas).</li>
+                <li>Demostrar la pericia técnica alcanzada al proponer la implementación de la "Gestión Técnica de los Factores de Riesgo Laboral" en una organización.</li>
+            </ul>
+        </section>
+
+        <!-- 2. Descripción de la Empresa -->
+        <section class="section-card">
+            <h3 class="section-title">2. Descripción de la Empresa: Social-Spirits Restobar S.A.S.</h3>
+            <p class="text-content">
+                <span class="highlight">Social-Spirits Restobar S.A.S.</span> es un emprendimiento ecuatoriano fundado en 2017 en Quito. Su propuesta integra gastronomía saludable, bebidas funcionales y actividades sociales. Desde su apertura en 2018, ha demostrado una evolución constante, adaptándose exitosamente a los desafíos de la pandemia en 2020 mediante la diversificación de productos y el rediseño de su modelo de negocio. Se constituyó formalmente como S.A.S. en diciembre de 2023 y accedió al fondo de capital semilla FONQUITO a finales de 2024.
+            </p>
+
+            <h4 class="subsection-title">2.1. Actividad del Emprendimiento</h4>
+            <p class="text-content">
+                Social-Spirits Restobar S.A.S. ofrece una experiencia gastronómica integral con cocina innovadora, cocteles artesanales y entretenimiento social. Su actividad principal se centra en la preparación de alimentos y bebidas, operando bajo el código <span class="highlight">CIIU Rev. 4.0: I5611 - Expendio a la mesa de comidas preparadas</span>.
+            </p>
+
+            <h4 class="subsection-title">2.2. Misión</h4>
+            <p class="text-content">
+                Promover el bienestar integral a través de la alimentación saludable, ofreciendo platillos personalizados mediante una experiencia consciente, nutritiva y sostenible.
+            </p>
+
+            <h4 class="subsection-title">2.3. Visión</h4>
+            <p class="text-content">
+                Proyectarse como una organización establecida, referente en alimentación saludable y sostenible en Quito, con expansión estratégica hacia el sector norte y los valles, integrando innovación digital, excelencia culinaria y hospitalidad consciente. Todo ello, basado en principios de economía circular, comercio justo y desarrollo social para el 2030.
+            </p>
+
+            <h4 class="subsection-title">2.4. Valores</h4>
+            <ul class="list-item">
+                <li><strong>Eco-conciencia:</strong> Reducir el impacto ambiental, priorizando ingredientes locales y sostenibles, y promoviendo prácticas culinarias responsables.</li>
+                <li><strong>Salud y Bienestar:</strong> Fomentar la salud física y mental a través de alimentos nutritivos y de calidad.</li>
+                <li><strong>Innovación y Tradición:</strong> Combinar prácticas ancestrales con tecnología para crear experiencias únicas y nutritivas.</li>
+                <li><strong>Sostenibilidad:</strong> Promover el respeto por la tierra y un ecosistema alimentario responsable, con economía circular y comercio justo.</li>
+                <li><strong>Responsabilidad Social:</strong> Generar un impacto positivo en la sociedad, trabajando con productores responsables y promoviendo el desarrollo mutuo.</li>
+            </ul>
+
+            <h4 class="subsection-title">2.5. Ubicación</h4>
+            <p class="text-content">
+                Social-Spirits Restobar S.A.S. está ubicado en la Casa Matriz en <span class="highlight">Calle Valparaíso, N9-10, Quito, Pichincha</span>, en el sector de San Blas.
+            </p>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=1yuSAMqA1wFa8tTZca3Gd2dwHCU4MAhzq" alt="Mapa de Ubicación de Social Spirits Restobar" class="rounded-lg shadow-md w-full md:w-3/4">
+            </div>
+
+            <h4 class="subsection-title">2.6. Estructura Organizacional</h4>
+            <p class="text-content">
+                Social-Spirits Restobar presenta una estructura organizacional de tipo funcional, con departamentos estratégicos liderados por una gerencia general y apoyada por un consultor de control.
+            </p>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=18gAz8-Z4OAqo12oEVb98UfNH79oYU4i0" alt="Organigrama de Social Spirits Restobar" class="rounded-lg shadow-md w-full">
+            </div>
+            <p class="text-content text-center text-sm text-gray-600">
+                (El organigrama detallado muestra la Gerencia General, Consultor de Control, y departamentos de Finanzas, RRHH, Operaciones, Ventas y Logística con sus respectivos jefes.)
+            </p>
+
+            <h5 class="text-xl font-semibold text-red-600 mb-3">Resumen de Personal Afiliado Único:</h5>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Roles Desempeñados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Francisco Proaño</td><td>Gerente General, Chef de Repostero</td></tr>
+                        <tr><td>Alfonso Proaño</td><td>Consultor de Control</td></tr>
+                        <tr><td>Myrian Viteri</td><td>Directora Financiera</td></tr>
+                        <tr><td>Juan Proaño</td><td>Jefe de RRHH, Jefe de Barra, Coordinador de Logística</td></tr>
+                        <tr><td>Jimmy Moposita</td><td>Jefe de Cocina</td></tr>
+                        <tr><td>Dennys Proaño</td><td>Suchef, Gerente Comercial</td></tr>
+                        <tr><td>Claudia Pinto</td><td>Encargada de Compras, Encargada de Salón</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-content text-right font-bold">Total de personas afiliadas únicas: 7</p>
+        </section>
+
+        <!-- 3. Stakeholders -->
+        <section class="section-card">
+            <h3 class="section-title">3. Stakeholders</h3>
+            <p class="text-content">
+                Social-Spirits Restobar es un espacio donde convergen la sustentabilidad, el arte, la cultura alternativa y el comercio justo. Su ecosistema de stakeholders está cuidadosamente construido para fortalecer su propuesta de valor y generar impacto social y ambiental positivo.
+            </p>
+            <h4 class="subsection-title">Resumen de Stakeholders Clave:</h4>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo de Stakeholder</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clientes</td>
+                            <td>Jóvenes-adultos (20-40 años), eco-conscientes y alternativos. Ejecutivos de San Blas, Conquito, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>Patrocinadores</td>
+                            <td>Nür Brewery, marcas sustentables y colectivos culturales.</td>
+                        </tr>
+                        <tr>
+                            <td>Socios Estratégicos</td>
+                            <td>Agricultores locales, cooperativas de comercio justo, artesanos.</td>
+                        </tr>
+                        <tr>
+                            <td>Equipo de Trabajo</td>
+                            <td>7 colaboradores comprometidos con la misión social y ambiental del restaurante.</td>
+                        </tr>
+                        <tr>
+                            <td>Comunidad Artística</td>
+                            <td>Artistas alternativos, músicos independientes y colectivos culturales.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 4. Mercado -->
+        <section class="section-card">
+            <h3 class="section-title">4. Mercado</h3>
+            <p class="text-content">
+                Social-Spirits Restobar S.A.S., constituida formalmente en diciembre de 2023 y ubicada en la zona de San Blas, en la ciudad de Quito, tiene una propuesta basada en ofrecer una experiencia integral que combina alimentación saludable, bebidas artesanales y actividades sociales, atrayendo especialmente a un público joven, entre 18 y 40 años, que busca disfrutar de ambientes donde se promueva la nutrición consciente y la interacción personal. Esta propuesta empresarial responde a las tendencias actuales del mercado, en las que los consumidores valoran no solo la calidad de la oferta culinaria, sino también el entorno y las experiencias que acompañan al servicio.
+            </p>
+            <p class="text-content">
+                En el contexto local, el sector gastronómico de Quito ha mantenido un ritmo sostenido de expansión. La preferencia del público por espacios que integran comida, bebidas y entretenimiento ha incrementado la demanda de este tipo de establecimientos. Factores como el crecimiento de la clase media y el incremento del flujo turístico han impulsado nuevas oportunidades para este sector, consolidando su rol en la economía urbana.
+            </p>
+            <p class="text-content">
+                Desde el punto de vista regulatorio, Social-Spirits Restobar S.A.S. se encuentra inscrita bajo el código <span class="highlight">5611 de la Clasificación Industrial Internacional Uniforme (CIIU) Rev. 4.0</span>, correspondiente a “Expendio a la mesa de comidas preparadas”. Esta categoría contempla negocios que ofrecen alimentos listos para el consumo en el propio establecimiento y es utilizada por entidades como el Servicio de Rentas Internas (SRI) y la Superintendencia de Compañías para fines de control y clasificación económica.
+            </p>
+            <p class="text-content">
+                Según información oficial, las actividades gastronómicas clasificadas bajo el código CIIU 5611 representan un componente relevante del tejido empresarial en Quito, tanto por su aporte al Producto Interno Bruto (estimado entre un 6% y 8% en servicios), como por su capacidad de generación de empleo en múltiples niveles operativos y administrativos.
+            </p>
+
+            <h4 class="subsection-title">4.1. Competencia</h4>
+            <p class="text-content">
+                “Social Spirits Restobar” opera en un mercado dinámico y competitivo, con competencia directa e indirecta:
+            </p>
+            <h5 class="text-xl font-semibold text-red-600 mb-3">Competencia Directa:</h5>
+            <ul class="list-item">
+                <li><strong>Jumandy Organic Garden:</strong> Ofrece variedad de comida saludable, incluyendo desayunos, almuerzos y opciones veganas.</li>
+                <li><strong>Bhumi Feel Good Kitchen:</strong> Ofrece platos elaborados con ingredientes 100% orgánicos.</li>
+            </ul>
+            <h5 class="text-xl font-semibold text-red-600 mb-3 mt-4">Competencia Indirecta:</h5>
+            <ul class="list-item">
+                <li><strong>60°Bistro UIO:</strong> Ofrece cócteles y cocina clásica.</li>
+                <li><strong>Nuema:</strong> Reconocido como uno de los mejores restaurantes de Latinoamérica, ofrece cocina ecuatoriana gourmet.</li>
+                <li><strong>Chulpi Urbano:</strong> Restaurante conocido por su nueva cocina ecuatoriana.</li>
+                <li><strong>Casa Gangotena:</strong> Hotel con restaurante reconocido como el mejor restaurante de hotel de Ecuador.</li>
+                <li><strong>Quitu:</strong> Restaurante incluido en el Top 100 de Latinoamérica.</li>
+            </ul>
+
+            <h4 class="subsection-title">4.2. Ingresos Registrados (Clasificación Industrial Uniforme - CIIU)</h4>
+            <p class="text-content">
+                “Social Spirits Restobar” tiene el potencial de generar ingresos a través de diversas vías dentro de la hostelería y el entretenimiento, según su Clasificación Industrial Uniforme (CIIU) de la Superintendencia de Compañías:
+            </p>
+            <ul class="list-item">
+                <li><strong>CIIU Actividad Principal: I5610.01</strong> - Restaurantes, cevicherías, picanterías, cafeterías, etcétera, incluido comida para llevar. (Actividad central y principal fuente de ingresos).</li>
+                <li><strong>CIIU Actividad Complementaria 1: I5621.00</strong> - Servicio de comidas basado en acuerdos contractuales con el cliente para un evento (banquetes, bodas, fiestas y otras celebraciones, buffet) en la localización especificada por el cliente (abastecedores de eventos). (Diversifica la oferta y el mercado, con ingresos significativos por evento).</li>
+                <li><strong>CIIU Actividad Complementaria 2: P8522.01</strong> - Enseñanza técnica y profesional de nivel inferior al de la enseñanza superior, capacitación para guías turísticos, cocineros y otro personal de hoteles y restaurantes. (Genera ingresos adicionales y aprovecha el conocimiento del personal).</li>
+                <li><strong>CIIU Actividad Complementaria 3: I5630.01</strong> - Actividades de preparación y servicio de bebidas para su consumo inmediato en: bares, tabernas, coctelerías, discotecas (con suministro predominante de bebidas) cervecerías y pubs. (Enfocada en vida nocturna y bebidas alcohólicas, con márgenes de beneficio diferentes).</li>
+            </ul>
+        </section>
+
+        <!-- 5. Levantamiento del Proceso -->
+        <section class="section-card">
+            <h3 class="section-title">5. Levantamiento del Proceso: Elaboración del Rostizado de Nativo</h3>
+            <p class="text-content">
+                Para comprender las operaciones de Social Spirits, se ha levantado el proceso de elaboración del "Rostizado de Nativo", que se presenta a continuación de forma integral.
+            </p>
+
+            <h4 class="subsection-title">5.1. Mapa de Macroprocesos</h4>
+            <p class="text-content">
+                El mapa gerencial de macroprocesos de Social Spirits se estructura en tres niveles:
+            </p>
+            <ul class="list-item">
+                <li><strong>Estratégicos:</strong> Incluye estrategias, producción, presupuestos y marketing.</li>
+                <li><strong>Agregadores de Nivel:</strong> Se enfoca en la producción, comercialización y post-venta.</li>
+                <li><strong>Apoyo:</strong> Comprende logística, compras y gestión de talento humano.</li>
+            </ul>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=1raQ88wI62pMPIYr0icdy0PfkV7rIC7N8" alt="Mapa Gerencial de Macroprocesos" class="rounded-lg shadow-md w-full">
+            </div>
+            <p class="text-content text-center text-sm text-gray-600">
+                (Representación visual de los niveles de procesos estratégicos, agregadores de valor y de apoyo.)
+            </p>
+
+            <h4 class="subsection-title">5.2. Modelamiento del Proceso: Rostizado de Nativo (Proceso Completo)</h4>
+            <p class="text-content font-semibold text-center mt-6">
+                A continuación, se muestra el proceso completo de elaboración del Rostizado de Nativo:
+            </p>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=1A9S_qGD9ORxi7jAXp-VqOhov2hhPggaN" alt="Diagrama de Flujo Proceso Completo Rostizado de Nativo" class="rounded-lg shadow-md w-full">
+            </div>
+            <p class="text-content text-center text-sm text-gray-600">
+                (Diagrama de flujo completo que integra las fases de Cocción, Rostizado y Emplatado y Servicio.)
+            </p>
+        </section>
+
+        <!-- 6. Checklist de Identificación de Riesgos -->
+        <section class="section-card">
+            <h3 class="section-title">6. Checklist de Identificación de Riesgos</h3>
+            <p class="text-content">
+                Se realizó un checklist para identificar los factores de riesgo en la empresa, revelando las áreas y tipos de riesgo con mayor incidencia.
+            </p>
+
+            <h4 class="subsection-title">6.1. Porcentaje de Factores de Riesgo Identificados por Tipo de Riesgo</h4>
+            <p class="text-content">
+                Este gráfico muestra los tipos de riesgos más comunes en Social Spirits:
+            </p>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=15q0trCOZoHQjtoBye28kZiQAMKU3drrU" alt="Gráfico de Porcentaje de Factores de Riesgo Identificados por Tipo de Riesgo" class="rounded-lg shadow-md w-full md:w-3/4">
+            </div>
+            <div class="bar-chart-container">
+                <div class="bar-item">
+                    <span class="bar-label">Factores Ergonómicos:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 66.7%;">66.7%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Mayor puntuación, relacionados con la forma en que los trabajadores realizan sus tareas (movimiento constante, estar de pie).</p>
+                <div class="bar-item">
+                    <span class="bar-label">Factores Psicosociales:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 51.9%;">51.9%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Segundo factor con mayor puntuación, relacionados con el impacto del trabajo en la salud mental y emocional (ritmo, presión, relaciones).</p>
+                <div class="bar-item">
+                    <span class="bar-label">Factores de Seguridad:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 21.2%;">21.2%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Riesgos de accidentes directos como caídas, golpes o cortes.</p>
+                <div class="bar-item">
+                    <span class="bar-label">Factores Químicos:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 14.8%;">14.8%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Exposición a sustancias químicas como productos de limpieza.</p>
+                <div class="bar-item">
+                    <span class="bar-label">Factores Biológicos:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 14.3%;">14.3%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Relacionados con microorganismos (bacterias, virus) o alérgenos.</p>
+                <div class="bar-item">
+                    <span class="bar-label">Factores Físicos:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 6.7%;">6.7%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Riesgos ambientales como ruido, temperatura o iluminación.</p>
+                <div class="bar-item">
+                    <span class="bar-label">Accidentes Mayores:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 0%;">0.0%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Accidentes graves como incendios o explosiones (no identificados).</p>
+            </div>
+
+            <h4 class="subsection-title mt-8">6.2. Porcentaje de Factores de Riesgo Identificados por Área</h4>
+            <p class="text-content">
+                Este gráfico muestra la concentración de riesgos por área en la empresa:
+            </p>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=1H1kkWfC7E__OJr94DLzCtyK1-GXNTH6d" alt="Gráfico de Porcentaje de Factores de Riesgo Identificados por Área" class="rounded-lg shadow-md w-full md:w-3/4">
+            </div>
+            <div class="bar-chart-container">
+                <div class="bar-item">
+                    <span class="bar-label">Producción:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 34.0%;">34.0%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Mayor cantidad de riesgos, dado que es el "corazón" operativo donde se manipulan ingredientes y se usan máquinas.</p>
+                <div class="bar-item">
+                    <span class="bar-label">Administrativa:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 23.7%;">23.7%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Siguiente área con mayor concentración de riesgos.</p>
+                <div class="bar-item">
+                    <span class="bar-label">Servicio:</span>
+                    <div class="bar-graph"><div class="bar-fill" style="width: 20.6%;">20.6%</div></div>
+                </div>
+                <p class="text-sm text-gray-600 ml-[160px] -mt-2 mb-2">Menor porcentaje de riesgos en comparación, pero aún considerable.</p>
+            </div>
+
+            <h4 class="subsection-title mt-8">6.3. Factores Físicos</h4>
+            <p class="text-content">
+                Riesgos relacionados con el ambiente físico de trabajo:
+            </p>
+            <ul class="list-item">
+                <li><strong>Temperatura Elevada:</strong> En el área de Producción por cercanía a estufas y hornos.</li>
+                <li><strong>Iluminación Excesiva:</strong> En el área Administrativa por pantallas cerca de ventanas, causando deslumbramiento.</li>
+            </ul>
+
+            <h4 class="subsection-title mt-8">6.4. Factores de Riesgos de Accidentes Mayores</h4>
+            <p class="text-content">
+                Ninguno de los factores que podrían provocar accidentes mayores (manejo de explosivos, sistemas eléctricos defectuosos a gran escala, acumulación de polvo, alta carga de combustible, falta de elementos contra incendios o rutas de evacuación inadecuadas) fueron identificados como presentes en ninguna de las áreas.
+            </p>
+
+            <h4 class="subsection-title mt-8">6.5. Factores de Seguridad</h4>
+            <p class="text-content">
+                Riesgos de accidentes directos:
+            </p>
+            <ul class="list-item">
+                <li><strong>Caídas de objetos por derrumbamiento o desprendimiento:</strong> Debido a la gran cantidad de objetos requeridos en un restaurante.</li>
+                <li><strong>Manejo de herramientas cortantes:</strong> Como cuchillos dentro de la cocina (riesgo más significativo).</li>
+            </ul>
+
+            <h4 class="subsection-title mt-8">6.6. Factores Ergonómicos</h4>
+            <p class="text-content">
+                Con una incidencia del <span class="highlight">66.7%</span>, este es el riesgo que mayor atención necesita. La mayoría de los ítems se encuentran marcados en las 3 áreas.
+            </p>
+            <ul class="list-item">
+                <li>**Hallazgos:** Monotonía, continuidad y semi-continuidad del trabajo, posturas forzadas, movimientos repetitivos, falta de confort por iluminación, ruido y temperatura.</li>
+                <li>**Implicaciones:** Problemas a largo plazo debido a rutinas de constante movimiento, estar de pie por largos periodos, y diseño inadecuado de estaciones de trabajo.</li>
+            </ul>
+
+            <h4 class="subsection-title mt-8">6.7. Factores Biológicos</h4>
+            <p class="text-content">
+                Riesgos relacionados con microorganismos y alérgenos:
+            </p>
+            <ul class="list-item">
+                <li><strong>Presencia de vectores (moscas):</strong> Moscas de la fruta en Producción y moscas en Servicio por ventanas abiertas, indicando posible foco de contaminación.</li>
+                <li><strong>Alérgenos de origen vegetal o animal:</strong> En el área de Servicio, falta de información sobre alergias de clientes, lo que representa un riesgo grave si no se maneja adecuadamente.</li>
+                <li>Los demás factores biológicos (elementos en descomposición, animales peligrosos/venenosos, insalubridad por microorganismos, consumo de alimentos no garantizados) no se identificaron.</li>
+            </ul>
+
+            <h4 class="subsection-title mt-8">6.8. Factores Psicosociales</h4>
+            <p class="text-content">
+                Varios ítems marcados en las 3 áreas, lo que denota la necesidad de un trabajo riguroso para mejorar las condiciones psicosociales del ambiente laboral y procurar un balance adecuado entre la vida personal y laboral.
+            </p>
+            <ul class="list-item">
+                <li>**Hallazgos:** Jornada de trabajo (pausas, trabajo nocturno, rotación, horas extras, descansos), trabajo a presión, alta responsabilidad, robos/atracos/desorden público, fijación visual permanente, sobrecarga mental, y relaciones interpersonales (malos entendidos, conflictos, ausencia de seguimiento, exigencias del cliente).</li>
+            </ul>
+
+            <h4 class="subsection-title mt-8">6.9. Factores Químicos</h4>
+            <p class="text-content">
+                Riesgos relacionados con la exposición a diversas sustancias químicas:
+            </p>
+            <ul class="list-item">
+                <li><strong>Gases de combustión:</strong> Presencia en Producción debido a la maquinaria que utiliza gas combustible (plancha, estufa, horno).</li>
+                <li><strong>Smog (contaminación ambiental):</strong> En Servicio y Administrativa, por la cercanía a la calle y ventanas, permitiendo la entrada de smog de vehículos.</li>
+                <li><strong>Emisiones de CO2:</strong> Generadas por las máquinas que utilizan gas en Producción.</li>
+                <li>Otros Factores Químicos (Polvo orgánico/inorgánico, Vapores, Nieblas, Aerosoles y Manipulación de químicos sólidos o líquidos) no fueron identificados.</li>
+            </ul>
+        </section>
+
+        <!-- 7. Análisis del Método Messeri: Riesgo de Incendio -->
+        <section class="section-card">
+            <h3 class="section-title">7. Análisis del Método Messeri: Riesgo de Incendio</h3>
+            <p class="text-content">
+                Se realizó una evaluación del riesgo de incendio utilizando el método Messeri para el restaurante “Social Spirits”.
+            </p>
+
+            <h4 class="subsection-title">Evaluación del Riesgo de Incendio</h4>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=1Aw9WSu3tSwNiWVG8lkJTssR8Llwbm2UZ" alt="Tabla de Evaluación del Riesgo de Incendio según Método Messeri" class="rounded-lg shadow-md w-full">
+            </div>
+            <p class="text-content text-sm text-gray-600">
+                **OBSERVACIONES:** Según el valor de P se denota que en caso de que se presente un incendio, el riesgo en el edificio puede ser grave.
+            </p>
+
+            <h4 class="subsection-title mt-8">Conclusiones de la Evaluación del Riesgo de Incendio para el restaurante “Social Spirits”</h4>
+            <ul class="list-item">
+                <li><strong>Nivel de Riesgo General: <span class="highlight">GRAVE (R = 5,10)</span>.</strong> Esta clasificación es inaceptable y exige intervención inmediata. Implica consecuencias muy severas para la vida humana y los bienes en caso de incendio.</li>
+                <li><strong>Contribución de Factores del Edificio y Actividad (Subtotal X = 67 Puntos):</strong> Puntuación elevada que indica deficiencias significativas en cocinas (acumulación de grasas, equipos de cocción), carga de ocupación (alta afluencia de público), materiales de decoración/mobiliario (si no son ignífugos) y acceso/distancia a bomberos.</li>
+                <li><strong>Contribución de Factores de Situación y Vigilancia (Subtotal Y = 15 Puntos):</strong> Resalta la necesidad crítica de sistemas de extinción específicos para cocinas, extintores adecuados (Clase K), detección y alarma rápida, y control de propagación del fuego/humo.</li>
+            </ul>
+            <p class="text-content font-semibold mt-4">Implicaciones en el restaurante Social Spirits:</p>
+            <ul class="list-item">
+                <li><strong>Riesgo Directo para Clientes y Personal:</strong> Preocupación principal por la seguridad, con riesgo de lesiones, intoxicaciones o fatalidades.</li>
+                <li><strong>Continuidad del Negocio:</strong> Un incendio de esta magnitud podría significar el cierre temporal o permanente, con graves pérdidas económicas y daño a la reputación.</li>
+                <li><strong>Cumplimiento Normativo Local:</strong> La clasificación "GRAVE" probablemente implica incumplimientos de normativas de seguridad contra incendios vigentes en Quito y Ecuador, acarreando sanciones.</li>
+            </ul>
+
+            <h4 class="subsection-title mt-8">Acciones Inmediatas Recomendadas para el restaurante Social Spirits:</h4>
+            <div class="recommendation-box">
+                <ul class="list-item">
+                    <li><strong>Auditoría Detallada en Cocinas:</strong> Identificar y mitigar riesgos asociados con equipos de cocción, acumulación de grasa y almacenamiento de combustibles.</li>
+                    <li><strong>Mantenimiento y Adecuación de Sistemas de Extinción:</strong>
+                        <ul>
+                            <li>Asegurar extintores suficientes, del tipo adecuado (Clase K), cargados, señalizados y accesibles.</li>
+                            <li>Verificar funcionamiento de sistemas de supresión de incendios en campanas extractoras; evaluar instalación urgente si no existen.</li>
+                            <li>Revisar sistemas de alarma y detección.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Plan de Evacuación y Señalización:</strong>
+                        <ul>
+                            <li>Desarrollar y comunicar un plan de evacuación claro para clientes y personal, con rutas de escape señalizadas, salidas despejadas y puntos de reunión.</li>
+                            <li>Realizar simulacros de evacuación con todo el personal.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Capacitación del Personal:</strong>
+                        <ul>
+                            <li>Capacitar a todo el personal en uso de extintores, primeros auxilios (quemaduras, intoxicación por humo) y procedimientos de evacuación.</li>
+                            <li>Designar y capacitar brigadas de emergencia o equipos de primera intervención.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 8. Matriz de Riesgos Laborales (NTP 330) - Resumen de Hallazgos Clave -->
+        <section class="section-card">
+            <h3 class="section-title">8. Matriz de Riesgos Laborales (NTP 330)</h3>
+            <p class="text-content">
+                La matriz de riesgos laborales, aplicada según la metodología NTP 330, proporciona un análisis detallado de los riesgos por puesto de trabajo, sus efectos, controles existentes y medidas de intervención propuestas. A continuación, se presenta la matriz sintetizada con los hallazgos más relevantes:
+            </p>
+
+            <h4 class="subsection-title">Matriz de Riesgos Laborales Sintetizada</h4>
+            <div class="flex justify-center my-6">
+                <!-- Google Drive links for images might require specific sharing settings or direct download links to render -->
+                <img src="https://drive.google.com/uc?id=1EEktd5tiTnt3cmkZu4Roe1H-7n43aURK" alt="Matriz de Riesgos Laborales Sintetizada (NTP 330)" class="rounded-lg shadow-md w-full">
+            </div>
+            <p class="text-content">
+                La matriz detalla una serie de riesgos críticos, especialmente en las categorías de <span class="highlight">Ergonómicos y Psicosociales</span>, así como riesgos de <span class="highlight">Seguridad</span> relacionados con el manejo de equipos y superficies. Las medidas de intervención propuestas abarcan desde la eliminación y sustitución hasta controles de ingeniería, administrativos y el uso de equipos de protección personal (EPP).
+            </p>
+            <p class="text-content font-semibold mt-4">
+                Es fundamental priorizar las intervenciones para los riesgos clasificados como "Situación crítica. Corrección urgente" (Nivel de Riesgo I) para garantizar la seguridad y el bienestar de los trabajadores.
+            </p>
+        </section>
+
+        <!-- Conclusión -->
+        <section class="section-card text-center">
+            <h3 class="section-title">Conclusión y Próximos Pasos</h3>
+            <p class="text-content text-lg">
+                Este proyecto ha permitido identificar de manera exhaustiva los factores de riesgo laboral presentes en Social Spirits Restobar S.A.S., así como evaluar la situación actual de seguridad y salud en el trabajo. La implementación de las medidas propuestas, especialmente aquellas dirigidas a los riesgos ergonómicos, psicosociales y de incendio, será crucial para optimizar el ambiente laboral, mejorar el bienestar del personal y asegurar la continuidad y sostenibilidad del negocio.
+            </p>
+            <p class="text-content text-lg font-semibold mt-4">
+                Invitamos a la dirección de Social Spirits a considerar estas recomendaciones como una inversión estratégica en el capital humano y el futuro de la empresa.
+            </p>
+        </section>
+
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 Universidad de las Américas. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
